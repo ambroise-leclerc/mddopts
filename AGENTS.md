@@ -16,5 +16,7 @@ command exists until the corresponding files are committed.
 - When implementation first lands, add exact configure/build/test commands here from the committed
   build system and keep them synchronized with CI.
 - Keep generated build output outside version control.
+- Treat `.agents/` as public, repository-scoped content, including skills and their supporting
+  assets. Personal assistant settings belong only in the tool-specific paths listed in `.gitignore`.
 - Keep tool-specific assistant settings local and ignored. Commit messages, PR descriptions, and
   code comments contain no assistant attribution.
